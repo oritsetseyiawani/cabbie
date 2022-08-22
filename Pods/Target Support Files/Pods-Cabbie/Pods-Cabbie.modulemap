@@ -1,0 +1,6 @@
+framework module Pods_Cabbie {
+  umbrella header "Pods-Cabbie-umbrella.h"
+
+  export *
+  module * { export * }
+}
