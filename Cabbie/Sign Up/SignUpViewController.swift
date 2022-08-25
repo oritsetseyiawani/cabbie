@@ -24,7 +24,7 @@ final class SignUpViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    @IBAction func signUpPressed(_ sender: Any) {
+    @IBAction func didTapSignUp(_ sender: Any) {
         if let email = emailTextField.text , let password = passwordTextField.text{
             signUpViewModel.performSignUp(email: email, password: password) { response, errorMessage in
                 if (response == true){

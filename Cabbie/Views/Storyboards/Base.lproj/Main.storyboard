@@ -124,7 +124,7 @@
                                             <color key="baseForegroundColor" systemColor="tintColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="forgotPasswordPressed:" destination="61N-YD-tiM" eventType="touchUpInside" id="le1-uq-b6h"/>
+                                            <action selector="didTapForgotPassword:" destination="61N-YD-tiM" eventType="touchUpInside" id="ZAQ-at-FMW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVv-Wa-ugh">
@@ -132,7 +132,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In"/>
                                         <connections>
-                                            <action selector="loginPressed:" destination="61N-YD-tiM" eventType="touchUpInside" id="o63-hy-ajs"/>
+                                            <action selector="didTapLogin:" destination="61N-YD-tiM" eventType="touchUpInside" id="4Dq-Gr-6p3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -194,7 +194,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
                                         <connections>
-                                            <action selector="signUpPressed:" destination="xTU-wK-gxC" eventType="touchUpInside" id="1nx-YF-9hH"/>
+                                            <action selector="didTapSignUp:" destination="xTU-wK-gxC" eventType="touchDown" id="B7b-Xj-IK9"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -255,7 +255,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="pickUpAddressTextFieldTouchDown:" destination="Bx0-0I-2Hm" eventType="touchDown" id="MYV-LI-y0Q"/>
+                                            <action selector="didTapPickUpAddressTextFieldTouchDown:" destination="Bx0-0I-2Hm" eventType="touchDown" id="Qdp-dc-Vq5"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪️To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuP-3W-WUg">
@@ -269,7 +269,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <action selector="destinationTextFieldTouchDown:" destination="Bx0-0I-2Hm" eventType="touchDown" id="olL-yS-zD3"/>
+                                            <action selector="didTapDestinationTextField:" destination="Bx0-0I-2Hm" eventType="touchDown" id="Jqn-wl-2in"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -285,7 +285,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="QjR-p2-rSs"/>
                     <connections>
-                        <outlet property="destinationTextField" destination="Nvg-Ih-Cdr" id="tQr-vX-9Ko"/>
+                        <outlet property="destinationTextField" destination="Nvg-Ih-Cdr" id="Gnd-ju-IYY"/>
                         <outlet property="fromLbl" destination="tro-2V-V0R" id="G7C-V3-6Qa"/>
                         <outlet property="pickUpAddressTextField" destination="U5u-aa-Lko" id="0r1-Gc-MBD"/>
                         <outlet property="toLbl" destination="JuP-3W-WUg" id="bHD-0c-eol"/>
@@ -446,7 +446,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="logout_black_18pt" imagePlacement="trailing" title="Log Out " titleAlignment="trailing"/>
                                 <connections>
-                                    <action selector="logOutTouchDown:" destination="1AX-By-GM3" eventType="touchUpInside" id="xUm-Dj-Sem"/>
+                                    <action selector="didTapLogOut:" destination="1AX-By-GM3" eventType="touchUpInside" id="qUd-eG-eNZ"/>
                                 </connections>
                             </button>
                         </barButtonItem>

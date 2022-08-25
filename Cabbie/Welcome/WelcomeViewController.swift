@@ -64,7 +64,7 @@ final class WelcomeViewController: UIViewController {
         view.addSubview(currentlocationMapDisplay)
     }
     
-    @IBAction func logOutTouchDown(_ sender: Any) {
+    @IBAction func didTapLogOut(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
     
