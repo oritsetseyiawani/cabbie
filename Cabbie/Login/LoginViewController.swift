@@ -20,7 +20,7 @@ final class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    @IBAction func forgotPasswordPressed(_ sender: Any) {
+    @IBAction func didTapForgotPassword(_ sender: Any) {
         
         if let email = emailTextField.text {
             loginViewModel.forgotPassword(email: email) { response in
@@ -40,7 +40,7 @@ final class LoginViewController: UIViewController {
          
     }
     
-    @IBAction func loginPressed(_ sender: UIButton) {
+    @IBAction func didTapLogin(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text{
             
             loginViewModel.performLogin(email: email, password: password) { response in

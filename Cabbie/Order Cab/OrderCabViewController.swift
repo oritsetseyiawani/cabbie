@@ -17,7 +17,7 @@ final class OrderCabViewController: UIViewController {
     @IBOutlet weak private var fromLbl: UILabel!
     private var placesClient: GMSPlacesClient!
     @IBOutlet weak private var pickUpAddressTextField: UITextField!
-    @IBOutlet weak private var destinationTextField: UITextField!
+   @IBOutlet weak private var destinationTextField: UITextField!
     
     var destination: CLLocation = CLLocation(latitude: 0, longitude: 0)
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ final class OrderCabViewController: UIViewController {
     }
     
    
-    @IBAction func destinationTextFieldTouchDown(_ sender: UITextField) {
+    @IBAction func didTapDestinationTextField(_ sender: UITextField) {
         
         let autocompleteController = GMSAutocompleteViewController()
         autocompleteController.delegate = self
@@ -48,23 +48,18 @@ final class OrderCabViewController: UIViewController {
     }
     
     
-    @IBAction func pickUpAddressTextFieldTouchDown(_ sender: Any) {
+@IBAction func didTapPickUpAddressTextFieldTouchDown(_ sender: Any) {
         let autocompleteController = GMSAutocompleteViewController()
         autocompleteController.delegate = self
         autocompleteController.view.tag = 1
-        
-
         let filter = GMSAutocompleteFilter()
         filter.type = .establishment
         filter.countries = ["GB"]
         autocompleteController.autocompleteFilter = filter
-        
         //Specify the place data types to return
         let fields: GMSPlaceField = [.name , .placeID]
         autocompleteController.placeFields = fields
-        
         present(autocompleteController , animated: true , completion: nil)
-        
     }
     
 }

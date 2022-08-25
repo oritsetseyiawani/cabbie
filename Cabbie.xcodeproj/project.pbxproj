@@ -146,20 +146,15 @@
 			children = (
 				B13524F328783A6D0096C77C /* AppDelegate.swift */,
 				B13524F528783A6D0096C77C /* SceneDelegate.swift */,
-				B1352531287851080096C77C /* FirebaseNetworkManager.swift */,
-				B13524F728783A6D0096C77C /* HomeViewController.swift */,
+				B1AACAA828B6E648004E7608 /* Networking */,
+				B1AACAA728B6E5C9004E7608 /* Home */,
 				B1352533287854C40096C77C /* Login */,
 				B1352534287854D80096C77C /* Sign Up */,
-				B135252328783DED0096C77C /* Constants.swift */,
-				B1AACAA228B3AD09004E7608 /* PrivateKeys.swift */,
-				B1EA49FD28975CB600085EE6 /* WelcomeViewController.swift */,
-				B1EA49F928917CE100085EE6 /* OrderCabViewController.swift */,
-				B1675ACB289AD79900C8C1DA /* BookingConfirmationViewController.swift */,
-				B1675ACD289ADA4300C8C1DA /* VehicleSelectionTableViewCell.swift */,
-				B1FA5BE728AD8D5D0069F720 /* UIView+Extension.swift */,
-				B13524F928783A6D0096C77C /* Main.storyboard */,
-				B13524FC28783A6E0096C77C /* Assets.xcassets */,
-				B13524FE28783A6E0096C77C /* LaunchScreen.storyboard */,
+				B1AACAA428B6E553004E7608 /* Welcome */,
+				B1AACAA528B6E566004E7608 /* Order Cab */,
+				B1AACAA628B6E57B004E7608 /* Booking Confirmation */,
+				B1AACAAA28B6E6B3004E7608 /* Views */,
+				B1AACAAB28B6E6FC004E7608 /* Utility */,
 				B135250128783A6E0096C77C /* Info.plist */,
 				B135252D287848010096C77C /* GoogleService-Info.plist */,
 			);
@@ -199,6 +194,75 @@
 				B135252B287841F00096C77C /* SignUpViewModel.swift */,
 			);
 			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		B1AACAA428B6E553004E7608 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA49FD28975CB600085EE6 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		B1AACAA528B6E566004E7608 /* Order Cab */ = {
+			isa = PBXGroup;
+			children = (
+				B1EA49F928917CE100085EE6 /* OrderCabViewController.swift */,
+			);
+			path = "Order Cab";
+			sourceTree = "<group>";
+		};
+		B1AACAA628B6E57B004E7608 /* Booking Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				B1675ACD289ADA4300C8C1DA /* VehicleSelectionTableViewCell.swift */,
+				B1675ACB289AD79900C8C1DA /* BookingConfirmationViewController.swift */,
+			);
+			path = "Booking Confirmation";
+			sourceTree = "<group>";
+		};
+		B1AACAA728B6E5C9004E7608 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B13524F728783A6D0096C77C /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B1AACAA828B6E648004E7608 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B1352531287851080096C77C /* FirebaseNetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B1AACAA928B6E689004E7608 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B13524F928783A6D0096C77C /* Main.storyboard */,
+				B13524FE28783A6E0096C77C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B1AACAAA28B6E6B3004E7608 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1AACAA928B6E689004E7608 /* Storyboards */,
+				B13524FC28783A6E0096C77C /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1AACAAB28B6E6FC004E7608 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B135252328783DED0096C77C /* Constants.swift */,
+				B1AACAA228B3AD09004E7608 /* PrivateKeys.swift */,
+				B1FA5BE728AD8D5D0069F720 /* UIView+Extension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		B8428639B5453EF8E2E9295F /* Pods */ = {
